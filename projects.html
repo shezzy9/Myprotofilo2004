@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">Portfolio</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html" class="active">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="projects-section">
+        <h2>My Projects</h2>
+        
+        <!-- Filter Buttons -->
+        <div class="project-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="web">Web Development</button>
+            <button class="filter-btn" data-filter="business">Business</button>
+            <button class="filter-btn" data-filter="app">Mobile Apps</button>
+            <button class="filter-btn" data-filter="design">UI/UX Design</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+            <!-- MoviesHub Project -->
+            <div class="project-card" data-category="web">
+                <div class="project-image">
+                    <img src="images/projects/movieshub.jpg" alt="MoviesHub Info">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="https://shezzy9.github.io/MoviesHub-Info/" class="project-link" target="_blank"><i class="fas fa-link"></i></a>
+                            <a href="https://github.com/Shezzy9/MoviesHub-Info" class="project-github" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>MoviesHub Info</h3>
+                    <p>A comprehensive movie information platform with dynamic content and modern UI</p>
+                    <div class="project-tags">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>API Integration</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Your Website Project -->
+            <div class="project-card" data-category="web">
+                <div class="project-image">
+                    <img src="images/projects/website-preview.jpg" alt="Personal Website">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="file:///C:/Users/Shazeb/OneDrive/Desktop/New%20folder%20(2)/index.html" class="project-link" target="_blank"><i class="fas fa-link"></i></a>
+                            <a href="#" class="project-github"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Personal Website</h3>
+                    <p>A modern and responsive personal website showcasing my portfolio and skills</p>
+                    <div class="project-tags">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>Responsive Design</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- E-commerce Project Card -->
+            <div class="project-card" data-category="web">
+                <div class="project-image">
+                    <img src="images/projects/project1.jpg" alt="E-commerce Website">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                            <a href="#" class="project-github"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>E-commerce Website</h3>
+                    <p>A full-featured online store built with React and Node.js</p>
+                    <div class="project-tags">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile App Project -->
+            <div class="project-card" data-category="app">
+                <div class="project-image">
+                    <img src="images/projects/mobile-app.jpg" alt="Mobile App">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                            <a href="#" class="project-github"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Fitness Tracker App</h3>
+                    <p>A mobile application for tracking workouts and fitness goals</p>
+                    <div class="project-tags">
+                        <span>React Native</span>
+                        <span>Firebase</span>
+                        <span>Mobile UI</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- UI/UX Design Project -->
+            <div class="project-card" data-category="design">
+                <div class="project-image">
+                    <img src="images/projects/ui-design.jpg" alt="UI/UX Design">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                            <a href="#" class="project-github"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Dashboard Design</h3>
+                    <p>Modern UI/UX design for an analytics dashboard</p>
+                    <div class="project-tags">
+                        <span>Figma</span>
+                        <span>UI Design</span>
+                        <span>UX Research</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Aurora Assets Project -->
+            <div class="project-card" data-category="web">
+                <div class="project-image">
+                    <img src="images/projects/aurora-assets.jpg" alt="Aurora Assets">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" class="project-link" target="_blank"><i class="fas fa-link"></i></a>
+                            <a href="#" class="project-github" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Aurora Assets</h3>
+                    <p>Specialized consultation services for businesses seeking strategic funding and sustainable growth</p>
+                    <div class="project-tags">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>Business</span>
+                        <span>Consulting</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
