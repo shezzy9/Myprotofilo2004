@@ -28,28 +28,6 @@ body {
     background-attachment: fixed;
 }
 
-@media only screen and (max-width: 768px) {
-    body {
-        font-size: 16px; /
-        padding: 10px;
-    }
-
-    .container {
-        width: 100%; 
-        flex-direction: column; 
-    }
-
-    img {
-        max-width: 100%; 
-        height: auto;
-    }
-
-    nav ul {
-        flex-direction: column;
-        text-align: center;
-    }
-}
-
 /* Navigation */
 nav {
     background: var(--dark-color);
@@ -1215,4 +1193,90 @@ footer {
 
 .mini-services .service-card.featured:hover {
     transform: scale(1) translateY(-10px);
+}
+
+/* Mobile Navigation */
+.nav-toggle {
+    display: none;
+    padding: .5em;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    z-index: 1000;
+}
+
+.hamburger {
+    display: block;
+    position: relative;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+    width: 2em;
+    height: 3px;
+    background: var(--white);
+    transition: transform 0.3s;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    position: absolute;
+    left: 0;
+}
+
+.hamburger::before { top: 6px; }
+.hamburger::after { bottom: 6px; }
+
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        position: fixed;
+        background: var(--dark-color);
+        width: 100%;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        height: 100vh;
+        padding: 2em;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-out;
+    }
+
+    .nav-links.nav-open {
+        transform: translateX(0);
+    }
+
+    .nav-links li {
+        margin: 1.5em 0;
+    }
+
+    .nav-links a {
+        font-size: 1.5rem;
+    }
+
+    /* Hamburger Animation */
+    .nav-open .hamburger {
+        transform: rotate(45deg);
+    }
+
+    .nav-open .hamburger::before {
+        transform: rotate(90deg);
+        top: 0;
+    }
+
+    .nav-open .hamburger::after {
+        opacity: 0;
+    }
 } 
